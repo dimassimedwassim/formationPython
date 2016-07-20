@@ -1,0 +1,5 @@
+<form action="{% url 'polls:results' pk %}" method="post">
+    {% csrf_token %}
+    {{ form.is_default|attr:'class:test' }}
+    <input type="submit" value="Submit" />
+</form>
